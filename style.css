@@ -18,7 +18,7 @@
 
 #middle {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: stretch;
   height: 60vh;
   width: 100vw;
@@ -30,7 +30,7 @@
 }
 
 #nav {
-  width: 20%;
+  width: 20vw;
   background-color: #4b4e6d;
 }
 
@@ -49,3 +49,68 @@
   width: 100vw;
   background-color: #f08a4b;
 }
+
+@media (min-width: 701px) and (max-width: 1100px){
+  #header {
+    height: 19%;
+    width: 100vw;
+  }
+  #footer {
+    height: 17%;
+    width: 100vw;
+  }
+  
+  #main {
+    flex-direction: row ;
+    width: auto;
+    height: 100%;
+  }
+  #middle {
+    flex-direction: column;
+    height: 64%;
+    
+  }
+  #nav {
+    width: auto;
+  }
+  #articles {
+    width: 50%;
+    height: 100%;
+  }
+  
+  #ads {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 700px){
+  #header {
+    height: 19%;
+    width: 100vw;
+  }
+  #footer {
+    height: 17%;
+    width: 100vw;
+  }
+  #middle {
+    flex-direction: column;
+    height: 64%;
+  }
+  #main {
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+  }
+  #nav {
+    width: auto;
+  }
+  #articles {
+    width: 100%;
+    height: 68%;
+  }
+  #ads {
+    width: 100%;
+    height: 32%;
+  }
+  }
